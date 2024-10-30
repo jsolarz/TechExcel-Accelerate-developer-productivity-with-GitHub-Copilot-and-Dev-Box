@@ -37,9 +37,9 @@ jobs:
         # https://github.com/azure/login
       - uses: azure/login@v2.1.1
         with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-id: 8900b0a3-4ae1-4e66-9045-c1e8f9195edf
+          tenant-id: 16b3c013-d300-468d-ac64-7eda0820b6d3
+          subscription-id: 3d21fb7f-6d4a-439b-b6d8-388bcf74d1d8
           # We also need to ensure that enable-AzPSSession is true. This is important for
           # using OIDC in Azure. If we were to pass in a client secret instead, we would not need
           # this setting enabled
