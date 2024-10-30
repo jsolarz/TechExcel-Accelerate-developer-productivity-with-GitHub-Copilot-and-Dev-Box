@@ -93,7 +93,6 @@ namespace RazorPagesTestSample.Pages
         }
 
         public static void WriteToDirectory(ZipArchiveEntry entry, string destDirectory)
-<<<<<<< HEAD
 		{
 			string destFileName = Path.GetFullPath(Path.Combine(destDirectory, entry.FullName));
 			string fullDestDirPath = Path.GetFullPath(destDirectory + Path.DirectorySeparatorChar);
@@ -102,16 +101,5 @@ namespace RazorPagesTestSample.Pages
 			}
 			entry.ExtractToFile(destFileName);
 		}
-
-=======
-        {
-            string destFileName = Path.GetFullPath(Path.Combine(destDirectory, entry.FullName));
-            string fullDestDirPath = Path.GetFullPath(destDirectory + Path.DirectorySeparatorChar);
-            if (!destFileName.StartsWith(fullDestDirPath)) {
-                throw new InvalidOperationException("Entry is outside the target dir: " + destFileName);
-            }
-            entry.ExtractToFile(destFileName);
-        }
->>>>>>> 44974a566405b2a61acb1b77755ca5891d7406a5
     }
 }
