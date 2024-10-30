@@ -10,7 +10,7 @@ on: workflow_dispatch
 # Open the deploy-advanced.yml file to see how we can accept user input
 # instead of needing to change this file to switch environments.
 env:
-  targetEnv: dev
+  targetEnv: prod
 
 jobs:
   # This script has one job: build and deploy the IaC resources
